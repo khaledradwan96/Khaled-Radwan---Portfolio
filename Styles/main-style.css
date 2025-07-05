@@ -1,9 +1,23 @@
+/* ========== Global Style ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 :root {
   --main-color: #18bc9c;
 }
 /* ========== Header ========== */
 header nav {
   text-align: right;
+  padding: 1rem;
 }
 
 header ul {
@@ -26,7 +40,7 @@ header ul li a:hover {
 }
 
 /* ========== Home section ========== */
-#home {
+#home .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,13 +52,12 @@ header ul li a:hover {
   border-radius: 50%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-
-#home .about {
-  max-width: 700px;
-}
 #home .about span {
   color: var(--main-color);
   font-weight: bold;
+}
+#home .about p {
+  margin: 10px 20px;
 }
 
 #home .about a {
@@ -54,4 +67,38 @@ header ul li a:hover {
   text-decoration: none;
   border-radius: 6px;
   display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* ========== Posts section ========== */
+#posts {
+  background-color: #edf7fa;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+#posts .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#posts .header a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+#posts span {
+  color: var(--main-color);
+}
+
+#posts .posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#posts .post {
+  background-color: white;
+  padding: 1rem;
+}
+#posts .post h5 {
+  margin: 10px;
 }

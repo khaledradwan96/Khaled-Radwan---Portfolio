@@ -1,6 +1,24 @@
-/* ========== Home section ========== */
+/* ========== Global Style ========== */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  #home {
+  /* ========== Home section ========== */
+  #home .container {
     flex-direction: row-reverse;
+  }
+
+  /* ========== Posts section ========== */
+  #posts .posts-container {
+    flex-direction: row;
   }
 }

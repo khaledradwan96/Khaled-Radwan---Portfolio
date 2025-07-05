@@ -1,0 +1,52 @@
+header nav {
+  text-align: right;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+header ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+header ul li a:hover {
+  color: #18bc9c;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#home figure img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#home .about {
+  max-width: 700px;
+}
+#home .about span {
+  color: #18bc9c;
+  font-weight: bold;
+}
+
+#home .about a {
+  background-color: #18bc9c;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+}

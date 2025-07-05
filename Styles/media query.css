@@ -21,4 +21,9 @@
   #posts .posts-container {
     flex-direction: row;
   }
+
+  /* ========== Featured works section ========== */
+  #featured .features-container .feature {
+    flex-direction: row;
+  }
 }

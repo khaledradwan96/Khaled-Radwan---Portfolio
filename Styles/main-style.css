@@ -13,6 +13,7 @@
 
 :root {
   --main-color: #18bc9c;
+  --main-color-hover: #128f76;
 }
 /* ========== Header ========== */
 header nav {
@@ -126,4 +127,71 @@ header ul li a:hover {
   color: white;
   padding: 3px 7px;
   border-radius: 12px;
+}
+
+/* ========== Contact me ========== */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.contact-form input:focus {
+  border: 2px solid var(--main-color-hover);
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background: var(--main-color);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: var(--main-color-hover);
+}
+
+.contact-form input[type="reset"] {
+  background-color: #e74c3c;
+  padding: 0.75rem;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form input[type="reset"]:hover {
+  background-color: #c0392b;
 }

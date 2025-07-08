@@ -14,11 +14,16 @@
 :root {
   --main-color: #18bc9c;
   --main-color-hover: #128f76;
+  --background-color: #f4f4f4;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 /* ========== Header ========== */
+header {
+  background-color: var(--background-color);
+  margin-bottom: 1rem;
+}
 header nav {
   text-align: right;
-  padding: 1rem;
 }
 
 header ul {
@@ -54,7 +59,7 @@ header ul li a:hover {
 #home figure img {
   width: 200px;
   border-radius: 50%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--box-shadow);
 }
 #home .about span {
   color: var(--main-color);
@@ -76,7 +81,7 @@ header ul li a:hover {
 
 /* ========== Posts section ========== */
 #posts {
-  background-color: #edf7fa;
+  background-color: var(--background-color);
   padding: 2rem 4rem;
   text-align: center;
 }
@@ -129,6 +134,45 @@ header ul li a:hover {
   border-radius: 12px;
 }
 
+/* ========== Footer ========== */
+footer {
+  background-color: var(--background-color);
+  padding: 1.5rem 0;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.personal-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.personal-social li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.personal-social li a:hover {
+  background-color: var(--main-color);
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: var(--box-shadow);
+}
+
 /* ========== Contact me ========== */
 .contact-form {
   max-width: 500px;
@@ -136,7 +180,7 @@ header ul li a:hover {
   padding: 2rem;
   background: #f9f9f9;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
 }
 
 .contact-form h2 {
